@@ -1,16 +1,7 @@
 import requests
 
 def obtener_terremotos(inicio, fin, magnitud_min=2.5):
-    """
-    Consulta los terremotos desde la API de USGS según las fechas y magnitud mínima.
-    Args:
-        inicio (str): Fecha de inicio en formato 'YYYY-MM-DD'.
-        fin (str): Fecha de fin en formato 'YYYY-MM-DD'.
-        magnitud_min (float): Magnitud mínima del terremoto (por defecto 2.5).
-        
-    Returns:
-        list: Lista de terremotos con detalles relevantes.
-    """
+    
     url = "https://earthquake.usgs.gov/fdsnws/event/1/query"
     
     # Parámetros de consulta
